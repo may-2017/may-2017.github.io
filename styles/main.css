@@ -1,0 +1,389 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: transparent;
+  background-image: linear-gradient(to right, #cbdcd6 0.3px, transparent 1px);
+  background-size: 20% 100%;
+  background-repeat: repeat-x;
+  background-position: 12.5%;
+  background-attachment: fixed;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container {
+  background-color: transparent;
+  flex: 1 0 auto;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.main-nav {
+  font-family: 'Tamil MN', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  list-style-type: none;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.main-nav li {
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 50%;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.logo-img {
+  width: 70%;
+}
+
+.navbar-toggle {
+  cursor: pointer;
+  font-size: 2.4rem;
+  position: absolute;
+  right: 5rem;
+  top: 1rem;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+section {
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero {
+  font-family: "Tamil MN", "Ubuntu", Helvetica, sans-serif;
+  margin-top: 10rem;
+}
+
+.heroText {}
+
+.heroImage {
+  display: none;
+}
+
+h1 {
+  font-size: 7.2rem;
+  font-weight: bold;
+}
+
+.blockLarge {
+  font-size: 2.4rem;
+  line-height: 3.5rem;
+  padding-top: 3.5rem;
+}
+
+.blockSmall {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  padding-top: 3rem;
+}
+
+.arrow {
+  margin-top: 10rem;
+}
+
+.arrow-img {
+  width: 1.8rem;
+}
+
+.ravenImg {
+  height: auto;
+  max-width: 100%;
+  padding-top: 11rem;
+}
+
+.project-text {
+  color: #2f2f2f;
+  font-family: 'Helvetica Neue', Helvetica, arial, sans-serif;
+  padding: 5.5rem 0;
+  padding-left: 4rem;
+  text-align: left;
+  width: 90%;
+}
+
+.type {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 3.6rem;
+  font-weight: bold;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  padding-bottom: 1.5rem;
+}
+
+.stroke {
+  width: 40%;
+}
+
+.contact {
+  margin: 5.2rem auto;
+  width: 20rem;
+}
+
+.contact-container {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  height: 2rem;
+  justify-content: space-between;
+  width: 20rem;
+}
+
+.contact-icon {
+  width: 70%;
+}
+
+footer {
+  flex-shrink: 0;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-footer {
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 20rem;
+}
+
+.logo-footer {
+  width: 4rem;
+}
+
+.contact-icon-footer {
+  width: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    clear: both;
+    overflow: auto;
+    width: 61.5rem;
+  }
+
+  .navbar {
+    align-items: center;
+    display: flex;
+    height: 7rem;
+    justify-content: space-between;
+    padding-bottom: 0;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+    color: #6fd6f1;
+  }
+
+  .blockLarge {
+    padding-top: 2rem;
+  }
+
+  .blockSmall {
+    float: left;
+    padding-top: 2rem;
+    text-align: left;
+    width: 70%;
+  }
+
+  .heroText {
+    float: left;
+    text-align: left;
+    width: 50%;
+  }
+
+  .heroImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: block;
+    float: right;
+    height: 0;
+    margin-left: -50rem;
+    padding-bottom: 43%;
+    position: relative;
+    width: 53%;
+  }
+
+  .contact {
+    float: left;
+    margin: 0 auto;
+    padding-top: 4rem;
+    width: 50%;
+  }
+
+  .arrow {
+    margin: 0 auto;
+    padding-top: 12rem;
+  }
+
+  .project {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+
+  .project-text {
+    float: right;
+    padding: 3.5rem 0 0 6rem;
+    width: 40%;
+  }
+
+  .stroke {
+    width: 11rem;
+  }
+
+  .ravenImg {
+    float: left;
+    padding: 0;
+    width: 60%;
+  }
+
+  hr {
+    width: 61.5rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .container {
+    width: 109.2rem;
+  }
+
+  .logo-img {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 12rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+  }
+
+  .heroText {
+    padding-top: 3rem;
+  }
+
+  .blockLarge {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+    padding-top: 5rem;
+  }
+
+  .blockSmall {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+    padding-top: 4rem;
+  }
+
+  .contact {
+    padding-top: 8rem;
+  }
+
+  .contact-container {
+    height: auto;
+  }
+
+  .contact-icon {
+    width: 100%;
+  }
+
+  .arrow {
+    padding-top: 10rem;
+  }
+
+  h3 {
+    font-size: 4.8rem;
+    padding-top: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .description {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .stroke {
+    width: 15rem;
+  }
+
+  .project-text {
+    padding-left: 10rem;
+    padding-top: 8.5rem;
+  }
+
+  .project {
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+  }
+
+  hr {
+    margin-bottom: 5rem;
+    width: 109.2rem;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  html {
+    font-size: 12px;
+  }
+
+  .container {
+    width: 1536px;
+  }
+
+  .logo-img {
+    width: 120%;
+  }
+}
