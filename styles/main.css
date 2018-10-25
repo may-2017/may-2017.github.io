@@ -9,7 +9,7 @@ html {
 body {
   background-color: transparent;
   background-image: linear-gradient(to right, #cbdcd6 0.4px, transparent 1px);
-  background-size: 15% 100%;
+  background-size: 25% 100%;
   background-repeat: repeat-x;
   background-position: 12.5%;
   background-attachment: fixed;
@@ -78,8 +78,6 @@ section {
   margin-top: 10rem;
 }
 
-.heroText {}
-
 .heroImage {
   display: none;
 }
@@ -136,6 +134,10 @@ h3 {
   padding-bottom: 1rem;
 }
 
+.title:hover h3 {
+  color: #6fd6f1;
+}
+
 .description {
   font-size: 1.4rem;
   line-height: 1.6rem;
@@ -143,7 +145,14 @@ h3 {
 }
 
 .stroke {
+  opacity: 0.8;
+  filter: alpha(opacity=40);
   width: 40%;
+}
+
+.stroke:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
 }
 
 .contact {
@@ -161,7 +170,14 @@ h3 {
 }
 
 .contact-icon {
+  opacity: 0.7;
+  filter: alpha(opacity=80);
   width: 70%;
+}
+
+.contact-icon:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
 }
 
 footer {
@@ -297,6 +313,11 @@ footer {
 }
 
 @media screen and (min-width: 1100px) {
+
+  body {
+    background-size: 15% 100%;
+  }
+
   .container {
     width: 109.2rem;
   }
@@ -375,9 +396,15 @@ footer {
 }
 
 @media screen and (min-width: 1900px) {
+
   html {
     font-size: 12px;
   }
+
+  body {
+    background-size: 10% 100%;
+  }
+
 
   .container {
     width: 1536px;

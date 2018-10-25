@@ -9,7 +9,7 @@ html {
 body {
   background-color: transparent;
   background-image: linear-gradient(to right, #cbdcd6 0.4px, transparent 1px);
-  background-size: 15% 100%;
+  background-size: 25% 100%;
   background-repeat: repeat-x;
   background-position: 12.5%;
   background-attachment: fixed;
@@ -78,7 +78,6 @@ a {
     position: relative;
   }
 
-
 #block-first, #block-second, #name {
   color: #2f2f2f;
   font-family: "Tamil MN", "Ubuntu", Helvetica, sans-serif;
@@ -123,10 +122,13 @@ a {
   padding-bottom: 2rem;
 }
 
+.hover-link:hover .contact-p {
+  color: #6fd6f1;
+}
+
 .contact-icon-large {
   position: relative;
   top: 0.4rem;
-
 }
 
 .contact-p {
@@ -218,6 +220,11 @@ footer {
 
 
 @media screen and (min-width: 1000px) {
+
+  body {
+    background-size: 15% 100%;
+  }
+
   .container {
     width: 70%;
   }
@@ -268,6 +275,11 @@ footer {
 }
 
 @media screen and (min-width: 1800px) {
+
+  body {
+    background-size: 10% 100%;
+  }
+
   .container {
     width: 70%;
   }

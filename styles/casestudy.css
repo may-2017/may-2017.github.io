@@ -126,6 +126,11 @@ p {
   width: 18rem;
 }
 
+.button-img:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
 #hero {
   padding-top: 9rem;
   text-align: center;
@@ -362,6 +367,10 @@ footer {
      color: #6fd6f1;
    }
 
+   .userflow-link {
+     display: inline-block;
+   }
+
  }
 
 
@@ -441,6 +450,8 @@ footer {
    #button-first-img {
      width: 10rem;
    }
+
+
 
    .specifies {
      /* align-items: baseline; */
