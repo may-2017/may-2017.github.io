@@ -8,8 +8,8 @@ html {
 
 body {
   background-color: transparent;
-  background-image: linear-gradient(to right, #cbdcd6 0.4px, transparent 1px);
-  background-size: 25% 100%;
+  background-image: linear-gradient(to right, #cbdcd6 0.5px, transparent 1px);
+  background-size: 20% 100%;
   background-repeat: repeat-x;
   background-position: 12.5%;
   background-attachment: fixed;
@@ -201,10 +201,6 @@ footer {
 
 @media screen and (min-width: 1000px) {
 
-  body {
-    background-size: 15% 100%;
-  }
-
   .container {
     width: 80%;
   }
@@ -266,10 +262,6 @@ footer {
 
   html {
     font-size: 12px;
-  }
-
-  body {
-    background-size: 10% 100%;
   }
 
 
