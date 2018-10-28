@@ -3,6 +3,7 @@
 <html>
 
   <head>
+    <link rel="shortcut icon" href="images/favicon.ico" />
     <title>May Song | UX UI Designer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,6 +13,9 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/revealer.css">
+
+
   </head>
 
   <body>
@@ -45,8 +49,10 @@
             <h1>Hello.</h1>
             <!-- First Line -->
             <div class="blockLarge">
-              I am<span style="font-weight: bold"> May Song</span>, UX/UI designer
-            <br/> based in Bay Area, CA.
+              <div id="rev-1">
+                I am<span style="font-weight: bold"> May Song</span>, UX/UI designer
+                <br/> based in Bay Area, CA.
+              </div>
             </div>
           </div>
           <!--Hero Image  -->
@@ -54,7 +60,9 @@
           </div>
           <!-- Second line -->
           <div class="blockSmall">
-            I design effective and friendly experience.
+            <div id="rev-2">
+              I design effective and friendly experience.
+            </div>
           </div>
           <!-- Contact Icons -->
           <div class="contact">
@@ -122,7 +130,13 @@
     </footer>
 
      <!-- Scripts  -->
+     <!-- navbar -->
      <script src="scripts/navbar.js"></script>
+     <!-- Block reveal  -->
+     <script src="scripts/anime.min.js"></script>
+     <script src="scripts/block_reveal.js"></script>
+     <script src="scripts/scrollMonitor.js"></script>
+     <script src="scripts/revealer.js"></script>
 
    </body>
 </html>
