@@ -1,6 +1,6 @@
 (function() {
 // Fake loading.
-  setTimeout(init, 1000);
+  setTimeout(init, 300);
 
   function init() {
     document.body.classList.remove('loading');
@@ -15,6 +15,7 @@
         }
       }
     });
+    document.querySelector('#rev-1').style.opacity = 1;
     rev1.reveal();
 
     var rev2 = new RevealFx(document.querySelector('#rev-2'), {
@@ -26,6 +27,7 @@
         }
       }
     });
+    document.querySelector('#rev-2').style.opacity = 1;
     rev2.reveal();
   }
 })();

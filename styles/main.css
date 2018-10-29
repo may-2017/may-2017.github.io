@@ -83,12 +83,12 @@ section {
 }
 
 h1 {
-  font-size: 7.2rem;
+  font-size: 7rem;
   font-weight: bold;
 }
 
 .blockLarge {
-  font-size: 2.4rem;
+  font-size: 2.24rem;
   line-height: 3.5rem;
   padding-top: 3.5rem;
 }
@@ -100,11 +100,24 @@ h1 {
 }
 
 .arrow {
-  margin-top: 10rem;
+  margin-top: 3rem;
+  padding-top: 5rem;
+  position: relative;
+}
+
+@keyframes bouncing {
+    0% {bottom: 0;}
+    50% {bottom: 20px;}
+    100% {bottom: 0;}
 }
 
 .arrow-img {
-  width: 1.8rem;
+    animation: bouncing 1s infinite ease-in-out;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    position: absolute;
+    width: 1.8rem;
 }
 
 .ravenImg {
@@ -245,6 +258,10 @@ footer {
     color: #6fd6f1;
   }
 
+  #rev-1, #rev-2 {
+    opacity: 0;
+  }
+
   .blockLarge {
     padding-top: 2rem;
   }
@@ -284,7 +301,7 @@ footer {
 
   .arrow {
     margin: 0 auto;
-    padding-top: 12rem;
+    margin-top: 2rem;
   }
 
   #project {
@@ -324,24 +341,22 @@ footer {
   }
 
   h1 {
-    font-size: 12rem;
+    font-size: 10rem;
     font-weight: bold;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero {
+    margin-top: 6rem;
   }
 
   .heroText {
     padding-top: 3rem;
   }
 
-  .blockLarge {
-    font-size: 3.2rem;
-    line-height: 4.2rem;
-    padding-top: 5rem;
-  }
-
-  .blockSmall {
-    font-size: 3.2rem;
-    line-height: 4.2rem;
+  .blockLarge, .blockSmall {
+    font-size: 2.8rem;
+    line-height: 4rem;
     padding-top: 4rem;
   }
 
@@ -357,9 +372,9 @@ footer {
     width: 100%;
   }
 
-  .arrow {
-    padding-top: 10rem;
-  }
+  /* .arrow {
+    padding-top: 8rem;
+  } */
 
   h3 {
     font-size: 4.8rem;
