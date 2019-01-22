@@ -7,12 +7,6 @@ html {
 }
 
 body {
-  background-color: transparent;
-  background-image: linear-gradient(to right, #cbdcd6 0.5px, transparent 1px);
-  background-size: 20% 100%;
-  background-repeat: repeat-x;
-  background-position: 12.5%;
-  background-attachment: fixed;
   color: #000;
   display: flex;
   flex-direction: column;
