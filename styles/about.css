@@ -7,12 +7,6 @@ html {
 }
 
 body {
-  background-color: transparent;
-  background-image: linear-gradient(to right, #cbdcd6 0.5px, transparent 1px);
-  background-size: 20% 100%;
-  background-repeat: repeat-x;
-  background-position: 12.5%;
-  background-attachment: fixed;
   color: #000;
   display: flex;
   flex-direction: column;
@@ -63,6 +57,10 @@ body {
   top: 1rem;
 }
 
+#current-page {
+  color: #6fd6f1;
+}
+
 a {
   color: #000;
   text-decoration: none;
@@ -90,6 +88,10 @@ a {
   width: 80%
 }
 
+#block-first {
+  padding-bottom: 0;
+}
+
 
 #name {
   font-size: 1.2rem;
@@ -107,6 +109,12 @@ a {
 }
 
 p{
+  padding-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
   padding-bottom: 2rem;
 }
 

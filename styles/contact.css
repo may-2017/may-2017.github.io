@@ -63,6 +63,10 @@ body {
   top: 1.5rem;
 }
 
+#current-page {
+  color: #6fd6f1;
+}
+
 a {
   color: #000;
   text-decoration: none;
@@ -120,6 +124,13 @@ a {
 .float-contact-container {
   flex: 1 0 auto;
   padding-bottom: 2rem;
+}
+
+a svg:hover #mail,
+a svg:hover #instagram,
+a svg:hover #linkedin,
+a svg:hover #github {
+  fill: #6fd6f1;
 }
 
 .hover-link:hover .contact-p {

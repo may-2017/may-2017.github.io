@@ -13,8 +13,8 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: #2f2f2f;
+  text-decoration: none;
 }
 
 section {
@@ -31,6 +31,7 @@ h1 {
 
 h2 {
   color: #fff;
+  font-family: 'Tamil MN', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 3rem;
@@ -40,6 +41,7 @@ h2 {
 
 h3 {
   color:#000;
+  font-family: 'Tamil MN', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 2rem;
   font-weight: bold;
   line-height: 2.4rem;
@@ -177,6 +179,16 @@ hr {
 .desktop-display {
   padding-top: 2rem;
   padding-bottom: 7rem;
+}
+
+.drive-logo-container {
+  display: flex;
+}
+
+.drive-logos {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  justify-content: space-between;
 }
 
 .img-before-sec {
@@ -363,12 +375,21 @@ footer {
      padding-left: 5rem;
    }
 
+   #userstory-link {
+     font-style: italic;
+   }
+
+   #userstory-link:hover {
+     color: #6fd6f1;
+   }
+
    .userflow-link:hover .p-color-typeface {
      color: #6fd6f1;
    }
 
    .userflow-link {
      display: inline-block;
+     font-style: italic;
    }
 
  }
@@ -376,9 +397,6 @@ footer {
 
  @media screen and (min-width: 1000px) {
 
-   /* html {
-     font-size: 16px;
-   } */
 
    .container {
      overflow: hidden;
@@ -438,7 +456,7 @@ footer {
    .ravenImg {
      float: right;
      text-align: right;
-     width: 60%
+     width: 65%
    }
 
    #button-first {
@@ -451,7 +469,9 @@ footer {
      width: 10rem;
    }
 
-
+   .drive-image{
+     max-width: 70%;
+   }
 
    .specifies {
      /* align-items: baseline; */
