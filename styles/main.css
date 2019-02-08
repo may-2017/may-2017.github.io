@@ -61,7 +61,7 @@ body {
 }
 
 a {
-  color: #000;
+  color: #2f2f2f;
   text-decoration: none;
 }
 
@@ -126,15 +126,20 @@ mark.name {
 }
 
 h3 {
+  display: inline-block;
   font-size: 3.6rem;
   font-weight: bold;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
 }
 
-.title:hover h3 {
+h3:hover {
   color: #6fd6f1;
 }
+
+/*.title:hover h3 {
+  color: #6fd6f1;
+}*/
 
 .cta {
   background: #6fd6f1;

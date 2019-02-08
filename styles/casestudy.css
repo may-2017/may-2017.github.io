@@ -98,6 +98,10 @@ p {
   top: 1rem;
 }
 
+#current-page {
+  color: #6fd6f1;
+}
+
 .type {
   font-size: 1.4rem;
   font-weight: bold;
