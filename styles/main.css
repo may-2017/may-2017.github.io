@@ -9,7 +9,7 @@ html {
 body {
   color: #2f2f2f;;
   display: flex;
-  font-family: 'Tamil MN', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, sans-serif;
   flex-direction: column;
   height: 100%;
 }
@@ -253,7 +253,6 @@ a svg:hover #github {
 }
 
 .text-overlay {
-    font-family: 'Helvetica Neue', Helvetica, arial, sans-serif;
     font-size: 1.2rem;
     line-height: 1.6rem;
   }

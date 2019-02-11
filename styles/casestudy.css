@@ -1,4 +1,4 @@
-* {
+UbuntuUbuntu* {
   box-sizing: border-box;
 }
 
@@ -31,7 +31,7 @@ h1 {
 
 h2 {
   color: #fff;
-  font-family: 'Tamil MN', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 3rem;
@@ -41,7 +41,7 @@ h2 {
 
 h3 {
   color:#000;
-  font-family: 'Tamil MN', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 2rem;
   font-weight: bold;
   line-height: 2.4rem;
@@ -63,7 +63,7 @@ p {
 
 .main-nav {
   color: #2f2f2f;
-  font-family: 'Tamil MN', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
   list-style-type: none;
@@ -129,7 +129,7 @@ p {
   color: #fff;
   font-size: 1.4rem;
   font-weight: bold;
-  font-family: 'Tamil MN', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, sans-serif;
   padding: 1rem 2rem;
   text-decoration: none;
   transition: 0.5s all;
