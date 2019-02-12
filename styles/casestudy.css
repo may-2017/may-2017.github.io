@@ -1,4 +1,4 @@
-UbuntuUbuntu* {
+* {
   box-sizing: border-box;
 }
 
@@ -40,13 +40,12 @@ h2 {
 }
 
 h3 {
-  color:#000;
   font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 2rem;
   font-weight: bold;
   line-height: 2.4rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 p {
@@ -62,7 +61,6 @@ p {
 }
 
 .main-nav {
-  color: #2f2f2f;
   font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
@@ -113,18 +111,21 @@ p {
 }
 
 .projecText {
-  color: #000;
+  font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, sans-serif;
   padding-top: 4rem;
 }
 
 .image {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .cta {
   background: #6fd6f1;
   border-radius: 0.6rem;
+  border: solid 2px #6fd6f1;
   box-shadow: 0 5px 8px rgba(132, 202, 221, 0.4);
   color: #fff;
   font-size: 1.4rem;
@@ -182,7 +183,7 @@ hr {
 }
 
 .specifies-section {
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 
 .specifies-title{
@@ -194,18 +195,15 @@ hr {
   background-repeat: no-repeat;
   background-size: 120% 100%;
   background-position: left;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-
-.desktop-display {
-  padding-top: 2rem;
-  padding-bottom: 7rem;
-}
-
 .drive-logo-container {
   display: flex;
+  padding-bottom: 3rem;
 }
 
 .drive-logos {
@@ -214,18 +212,13 @@ hr {
   justify-content: space-between;
 }
 
-.img-before-sec {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.img-before-p {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.drive-image {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .testing-img {
-padding-top: 3rem;
+padding-bottom: 0;
 }
 
 .li-text {
@@ -244,8 +237,8 @@ padding-top: 3rem;
 
 .color-typeface {
   background-color: #f9f9f9;
-  margin-top: 3rem;
-  margin-bottom: 6rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .wrapper-bgcolor{
@@ -413,7 +406,7 @@ footer {
      color: #6fd6f1;
    }
 
-   .userflow-link:hover .p-color-typeface {
+   .userflow-link:hover {
      color: #6fd6f1;
    }
 
@@ -430,7 +423,8 @@ footer {
 
    .container {
      overflow: hidden;
-     width: 55%;
+     max-width: 55%;
+     width: 100%;
    }
 
    .navbar {
@@ -473,6 +467,7 @@ footer {
    }
 
    #hero {
+     padding-bottom: 6.25rem;
      width: 80%
    }
 
@@ -504,11 +499,11 @@ footer {
    }
 
    .specifies {
-     /* align-items: baseline; */
      display: flex;
      flex-direction: row;
      justify-content: space-between;
-     width: 90%;
+     max-width: 90%;
+     width: 100%;
    }
 
    .specifies-section {
@@ -527,13 +522,17 @@ footer {
 
    .stroke-wrapper {
      background-size: 100% 100%;
-     margin: 0 auto;
-     width: 80%;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 8rem;
+     max-width: 80%;
+     width: 100%;
    }
 
    .color-typeface {
-     margin: -3.5rem auto 10rem auto;
-     width: 80%;
+     margin: 4rem auto 10rem auto;
+     max-width: 65%;
+     width: 100%;
    }
 
    .wrapper-bgcolor{
@@ -558,31 +557,28 @@ footer {
    .large-image {
      margin-left: auto;
      margin-right: auto;
-     width: 80%
+     max-width: 65%;
+     width: 100%;
    }
 
-   #hero {
-     padding-bottom: 6.25rem;
+   .small-image {
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+     max-width: 55%;
    }
 
-   .specifies {
-     padding-top: 6.25rem;
-     padding-bottom: 6.25rem;
-   }
-
-   h3 {
-     padding-top: 6.25rem;
-   }
-
-   .img-before-sec {
-     padding-bottom: 5rem;
+   .wireframes {
+     padding-bottom: 0;
+     margin-bottom: 3rem;
    }
 
    .wrapper-mobile {
      display: flex;
      flex-direction: row;
      justify-content: space-between;
-     width: 80%;
+     max-width: 80%;
+     width: 100%;
    }
 
    .mobile-screen {
@@ -592,17 +588,14 @@ footer {
    .wrapper-testing {
      margin-left: auto;
      margin-right: auto;
-     width: 80%
+     max-width: 65%;
+     width: 100%;
    }
 
    .wrapper-testing-content {
      width: 65%;
    }
 
-   #full-hp-image{
-     width: 100%;
-     max-width: 50%;
-   }
  }
 
  @media screen and (min-width: 1900px) {
@@ -611,20 +604,32 @@ footer {
      font-size: 16px;
    }
 
-   .wrapper-bgcolor-black {
-     width: 80%;
+   #hero {
+     max-width: 1530px;
+     width: 100%;
    }
 
-   .wrapper-wireframes-text {
-     float: left;
-     width: 40%;
+   .navbar {
+     margin: auto;
+     max-width: 1530px;
+     padding: 0;
+     width: 100%;
    }
-   .wrapper-wireframes-img {
-     float: right;
-     width: 50%;
+
+   .container, .small-image {
+     max-width: 1100px;
    }
-   .float-img-black {
-     padding-top: 10rem;
+
+   .specifies {
+     max-width: 1720px;
+   }
+
+   .stroke-wrapper, .wrapper-mobile {
+     max-width: 1530px;
+   }
+
+   .large-image, .color-typeface, .wrapper-testing {
+     max-width: 1300px;
    }
 
  }
