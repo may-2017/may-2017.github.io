@@ -106,10 +106,40 @@ mark.name {
   display: none;
 }
 
+.project-raven {
+  padding-top: 3rem;
+  position: relative;
+}
+
+.project-raven:hover img {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.project-raven:hover:before {
+  background: #6fd6f1;
+
+}
+
+.project-raven:before {
+  background: #f2f2f2;
+  content: "";
+  height: 60%;
+  left: 0;
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  transition: 0.5s all;
+  transition-delay: 0.2s;
+  z-index: -1;
+}
+
 .ravenImg {
   height: auto;
-  max-width: 100%;
-  padding-top: 3rem;
+  max-width: 80%;
+  position: relative;
+  transition: 0.5s all;
+
 }
 
 .project-text {
@@ -414,10 +444,17 @@ footer {
     width: 11rem;
   }
 
-  .ravenImg {
+  /*.ravenImg {
     float: left;
     padding: 0;
     width: 60%;
+  }*/
+
+  .project-raven {
+    float: left;
+    padding: 0;
+    width: 60%;
+
   }
 
   #grid-container {
