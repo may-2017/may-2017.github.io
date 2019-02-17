@@ -54,6 +54,10 @@ p {
   padding-bottom: 2rem;
 }
 
+b {
+  font-weight: bold;
+}
+
 .container {
   background-color: #fff;
   margin: 0 auto;
@@ -219,6 +223,10 @@ hr {
 
 .testing-img {
 padding-bottom: 0;
+}
+
+.emphasize {
+  font-weight: bold;
 }
 
 .li-text {

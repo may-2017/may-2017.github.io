@@ -113,8 +113,10 @@ p{
 }
 
 h3 {
+  font-family: "Ubuntu", "Ubuntu", Helvetica, sans-serif;
   font-size: 1.8rem;
   font-weight: bold;
+  padding-top: 1rem;
   padding-bottom: 2rem;
 }
 
