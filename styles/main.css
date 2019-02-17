@@ -427,7 +427,43 @@ footer {
       display: block;
       left: 50%;
       position: absolute;
+      transform: rotate(180deg);
       width: 1.8rem;
+  }
+
+  .arrow1 {
+    animation: goingup1 1.5s infinite;
+    animation-delay: .1s;
+
+  }
+
+  .arrow2 {
+    animation: goingup2 1.5s infinite;
+    animation-delay: .25s;
+  }
+
+  .arrow3 {
+    animation: goingup3 1.5s infinite;
+    animation-delay: .4s;
+
+  }
+
+  @keyframes goingup1 {
+    0% { opacity: 0; },
+    50% { opacity: 1; },
+    100% { opacity: 0; },
+  }
+
+  @keyframes goingup2 {
+    0% { opacity: 0; },
+    50% { opacity: 1; },
+    100% { opacity: 0; },
+  }
+
+  @keyframes goingup3 {
+    0% { opacity: 0; },
+    50% { opacity: 1; },
+    100% { opacity: 0; },
   }
 
   #project {
