@@ -432,18 +432,18 @@ footer {
   }
 
   .arrow1 {
-    animation: goingup1 1.5s infinite;
+    animation: goingup1 1s infinite;
     animation-delay: .1s;
 
   }
 
   .arrow2 {
-    animation: goingup2 1.5s infinite;
+    animation: goingup2 1s infinite;
     animation-delay: .25s;
   }
 
   .arrow3 {
-    animation: goingup3 1.5s infinite;
+    animation: goingup3 1s infinite;
     animation-delay: .4s;
 
   }
