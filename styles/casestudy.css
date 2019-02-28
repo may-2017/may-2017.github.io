@@ -127,11 +127,11 @@ b {
 }
 
 .cta {
-  background: #6fd6f1;
+  background: #fff;
   border-radius: 0.6rem;
   border: solid 2px #6fd6f1;
   box-shadow: 0 5px 8px rgba(132, 202, 221, 0.4);
-  color: #fff;
+  color: #6fd6f1;
   font-size: 1.4rem;
   font-weight: bold;
   font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, sans-serif;
@@ -142,8 +142,8 @@ b {
 
 .cta:hover {
   border: solid 2px #6fd6f1;
-  background: #fff;
-  color: #6fd6f1;
+  background: #6fd6f1;
+  color: #fff;
 }
 
 .button {

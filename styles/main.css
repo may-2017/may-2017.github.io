@@ -178,11 +178,11 @@ h3:hover {
 }*/
 
 .cta {
-  background: #6fd6f1;
+  background: #fff;
   border: solid 2px #6fd6f1;
   border-radius: 0.6rem;
   box-shadow: 0 5px 8px rgba(132, 202, 221, 0.4);
-  color: #fff;
+  color: #6fd6f1;
   font-size: 1.4rem;
   font-weight: bold;
   padding: 1rem 2rem;
@@ -192,8 +192,8 @@ h3:hover {
 
 .cta:hover {
   border: solid 2px #6fd6f1;
-  background: #fff;
-  color: #6fd6f1;
+  background: #6fd6f1;
+  color: #fff;
 }
 
 
