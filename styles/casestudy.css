@@ -64,6 +64,10 @@ b {
   width: 65%;
 }
 
+.navbar {
+  margin-top: 10px;
+}
+
 .main-nav {
   font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 1.4rem;
@@ -95,6 +99,7 @@ b {
 .navbar-toggle {
   cursor: pointer;
   font-size: 2.4rem;
+  margin-top: 20px;
   position: absolute;
   right: 5rem;
   top: 1rem;
