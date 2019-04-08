@@ -22,14 +22,14 @@ body {
 }
 
 .navbar {
-  margin-top: 10px;
+  margin-top: 2rem;
 }
 
 .main-nav {
+  display: none;
   font-size: 1.4rem;
   font-weight: bold;
   list-style-type: none;
-  display: none;
 }
 
 .active {
@@ -44,7 +44,6 @@ body {
 .logo {
   display: inline-block;
   font-size: 50%;
-  margin-top: 1rem;
   margin-left: 2rem;
 }
 
@@ -52,14 +51,134 @@ body {
   width: 70%;
 }
 
-.navbar-toggle {
+/* .navbar-toggle {
   cursor: pointer;
   font-size: 2.4rem;
   margin-top: 20px;
   position: absolute;
   right: 5rem;
   top: 1rem;
+} */
+
+/* ---- New navbar ------ */
+.open {
+  /* font-size: 2.4rem; */
+  /* margin-top: 20px; */
+  position: absolute;
+  right: 5rem;
+  top: 1rem;
+
+  /* position: fixed; */
+  /* top: 40px; */
+  /* right: 40px; */
+  width: 40px;
+  height: 50px;
+  display: block;
+  cursor: pointer;
+  transition: opacity 0.2s linear;
 }
+
+.open:hover { opacity: 0.8; }
+
+.open span {
+  display: block;
+  float: left;
+  clear: both;
+  height: 3.6px;
+  width: 32px;
+  border-radius: 36px;
+  background-color: #2f2f2f;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.open span:nth-child(1) {
+  /* margin-top: 10px; */
+  margin-top: 14px;
+  z-index: 9;
+}
+
+.open span:nth-child(2) { margin-top: 25px; }
+
+/* .open span:nth-child(3) { margin-top: 40px; } */
+
+.open span:nth-child(3) { margin-top: 36px; }
+
+.sub-menu {
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  height: 0;
+  width: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+  background-color: rgba(38, 84, 133, 0.54);
+  border-radius: 50%;
+  z-index: 18;
+  overflow: hidden;
+}
+
+.sub-menu li {
+  display: block;
+  float: right;
+  clear: both;
+  height: auto;
+  margin-right: -160px;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.sub-menu li:first-child { margin-top: 180px; }
+
+.sub-menu li:nth-child(1) { -webkit-transition-delay: 0.05s; }
+
+.sub-menu li:nth-child(2) { -webkit-transition-delay: 0.10s; }
+
+.sub-menu li:nth-child(3) { -webkit-transition-delay: 0.15s; }
+
+.sub-menu li:nth-child(4) { -webkit-transition-delay: 0.20s; }
+
+.sub-menu li:nth-child(5) { -webkit-transition-delay: 0.25s; }
+
+.sub-menu li a {
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  display: block;
+  float: left;
+  line-height: 40px;
+}
+
+.oppenned .sub-menu {
+  opacity: 1;
+  height: 400px;
+  width: 400px;
+}
+
+.oppenned span:nth-child(2) { overflow: visible; }
+
+.oppenned span:nth-child(1),
+.oppenned span:nth-child(3) {
+  z-index: 100;
+  transform: rotate(45deg);
+}
+
+.oppenned span:nth-child(1) { transform: rotate(45deg) translateY(6px) translateX(6px); }
+
+.oppenned span:nth-child(2) {
+  height: 400px;
+  width: 400px;
+  right: -160px;
+  top: -160px;
+  border-radius: 50%;
+  background-color: rgba(38, 84, 133, 0.54);
+}
+
+.oppenned span:nth-child(3) { transform: rotate(-45deg) translateY(-10px) translateX(10px); }
+
+.oppenned li { margin-right: 168px; }
+
 
 #current-page {
   color: #6fd6f1;
@@ -77,7 +196,7 @@ section {
 }
 
 .hero {
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 
 .heroImage {
@@ -145,7 +264,6 @@ mark.name {
   max-width: 80%;
   position: relative;
   transition: 0.5s all;
-
 }
 
 .project-text {
@@ -326,21 +444,24 @@ footer {
   width: 1.5rem;
 }
 
+
 @media screen and (min-width: 768px) {
 
   .container {
     clear: both;
     overflow: auto;
-    width: 61.5rem;
   }
 
   .navbar {
     align-items: center;
     display: flex;
     height: 7rem;
-    margin-top: 0;
     justify-content: space-between;
     padding-bottom: 0;
+  }
+
+  .open {
+    display: none;
   }
 
   .main-nav {
@@ -362,9 +483,9 @@ footer {
     margin-top: 0;
   }
 
-  .navbar-toggle {
+  /* .navbar-toggle {
     display: none;
-  }
+  } */
 
   .logo:hover,
   .nav-links:hover {
@@ -523,10 +644,10 @@ footer {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1000px) {
 
   .container {
-    width: 109.2rem;
+    width: 70%;
   }
 
   .logo-img {
@@ -539,9 +660,6 @@ footer {
     margin-bottom: 2rem;
   }
 
-  .hero {
-    margin-top: 6rem;
-  }
 
   .heroText {
     padding-top: 3rem;
@@ -619,7 +737,7 @@ footer {
   }
 
   .container {
-    width: 1536px;
+    max-width: 1536px;
   }
 
   .logo-img {

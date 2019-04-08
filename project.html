@@ -29,33 +29,73 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar" id="top">
-      <span class="navbar-toggle" id="js-navbar-toggle">
-          <i class="fa fa-bars" aria-hidden="true"></i>
-      </span>
-      <a href="index.html" class="logo"><img src="images/logo.svg" alt="logo" class="logo-img"></a>
-      <ul class="main-nav" id="js-menu">
-        <li>
-          <a href="index.html" class="nav-links">HOME</a>
-        </li>
-        <li>
-          <a href="index.html#project" class="nav-links" id="current-page">WORKS</a>
-        </li>
-        <li>
-          <a href="about.html" class="nav-links">ABOUT</a>
-        </li>
-        <li>
-          <a href="/images/May_Song_Resume.png" class="nav-links">RESUME</a>
-        </li>
-        <li>
-          <a href="contact.html" class="nav-links">CONTACT</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="nav-container">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <!-- <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </span> -->
+        <a href="index.html" class="logo"><img src="/images/logo.svg" alt="logo" class="logo-img"></a>
+
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="index.html" class="nav-links">HOME</a>
+          </li>
+
+          <li>
+            <a href="index.html#project" class="nav-links" id="current-page">WORKS</a>
+          </li>
+
+          <li>
+            <a href="about.html" class="nav-links">ABOUT</a>
+          </li>
+
+          <li>
+            <a href="/images/May_Song_Resume.png" class="nav-links">RESUME</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="nav-links">CONTACT</a>
+          </li>
+        </ul>
+
+        <div class="open">
+          <span class="cls"></span>
+          <span>
+            <ul class="sub-menu">
+        <!-- <ul class="main-nav" id="js-menu"> -->
+              <li>
+                <a href="index.html" class="nav-links">HOME</a>
+              </li>
+
+              <li>
+                <a href="index.html#project" class="nav-links" id="current-page">WORKS</a>
+              </li>
+
+              <li>
+                <a href="about.html" class="nav-links">ABOUT</a>
+              </li>
+
+              <li>
+                <a href="/images/May_Song_Resume.png" class="nav-links">RESUME</a>
+              </li>
+
+              <li>
+                <a href="contact.html" class="nav-links">CONTACT</a>
+              </li>
+            </ul>
+          </span>
+          <span class="cls"></span>
+        </div>
+      </nav>
+
+    </div>
 
       <!-- Hero Unit -->
       <section id="hero">
-        <img src="images/raven_new@2x_smaller.png" alt="Raven Homepage" class="ravenImg image">
+        <div class="project-raven">
+          <img src="images/raven-video-prototype-v215.gif" alt="Raven Prototype" class="raven-gif image">
+        </div>
         <div class="projecText">
           <div class="type">WEB, MOBILE</div>
           <h1>Raven</h1>
@@ -128,7 +168,7 @@
     </div>
 
     <div class="large-image">
-      <img src="images/coffee_screen_small.jpg" alt="On Laptop" class="image desktop-display">
+      <img src="images/coffee_screen.jpg" alt="On Laptop" class="image desktop-display">
     </div>
 
     <!-- h2 With Stroke Background -->
@@ -140,12 +180,12 @@
     <div class="container">
       <section class="researchExpo">
         <h3>User Research</h3>
-        <p>In the user research phase, I began with a user survey. One of the primary goals of this survey is Determining what features users actually want. The survey is also a great place to augment the competitive analysis by getting users thoughts on the competition. </p>
+        <p>In the user research phase, I began with a user survey. One of the primary goals of this survey is determining what features users actually want. The survey is also a great place to augment the competitive analysis by getting users thoughts on the competition. </p>
       </section>
     </div>
 
     <div class="survey_result large-image">
-      <img src="images/survey_result_border.png" alt="Survey Result" class="image img-before-p">
+      <img src="images/survey_result_img.png" alt="Survey Result" class="image img-before-p">
     </div>
 
     <div class="container">
@@ -382,7 +422,7 @@
           </p>
         </div>
         <div class="wrapper-wireframes-img">
-          <img src="images/challenge_small.png" alt="Logo with X" class="image float-img-black">
+          <img src="images/challenge_skew.png" alt="Logo with X" class="image float-img-black">
         </div>
         </section>
       </div>
@@ -498,7 +538,10 @@
     </footer>
 
     <!-- Scripts  -->
-    <script src="scripts/navbar.js"></script>
+    <!-- navbar -->
+    <script src="scripts/jQuery_3.3.1.js"></script>
+    <script src="scripts/new_navbar.js"></script>
+    <!-- <script src="scripts/navbar.js"></script> -->
 
    </body>
 </html>

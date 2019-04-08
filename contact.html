@@ -32,10 +32,11 @@
     <div class="container">
       <!-- Navbar -->
       <nav class="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle">
+        <!-- <span class="navbar-toggle" id="js-navbar-toggle">
             <i class="fa fa-bars" aria-hidden="true"></i>
-        </span>
+        </span> -->
         <a href="index.html" class="logo"><img src="/images/logo.svg" alt="logo" class="logo-img"></a>
+
         <ul class="main-nav" id="js-menu">
           <li>
             <a href="index.html" class="nav-links">HOME</a>
@@ -44,18 +45,50 @@
           <li>
             <a href="index.html#project" class="nav-links">WORKS</a>
           </li>
-          <li>
-            <a href="/images/May_Song_Resume.png" class="nav-links">RESUME</a>
-          </li>
+
           <li>
             <a href="about.html" class="nav-links">ABOUT</a>
           </li>
+
+          <li>
+            <a href="/images/May_Song_Resume.png" class="nav-links">RESUME</a>
+          </li>
+
           <li>
             <a href="contact.html" class="nav-links" id="current-page">CONTACT</a>
           </li>
-
         </ul>
+
+        <div class="open">
+          <span class="cls"></span>
+          <span>
+            <ul class="sub-menu">
+        <!-- <ul class="main-nav" id="js-menu"> -->
+              <li>
+                <a href="index.html" class="nav-links">HOME</a>
+              </li>
+
+              <li>
+                <a href="index.html#project" class="nav-links">WORKS</a>
+              </li>
+
+              <li>
+                <a href="about.html" class="nav-links">ABOUT</a>
+              </li>
+
+              <li>
+                <a href="/images/May_Song_Resume.png" class="nav-links">RESUME</a>
+              </li>
+
+              <li>
+                <a href="contact.html" class="nav-links" id="current-page">CONTACT</a>
+              </li>
+            </ul>
+          </span>
+          <span class="cls"></span>
+        </div>
       </nav>
+
     </div>
 
     <div id="hero-image" style="background-image: url('images/bigsur_new.png')">
@@ -184,7 +217,9 @@
     </footer>
 
      <!-- Scripts  -->
-     <script src="scripts/navbar.js"></script>
+     <script src="scripts/jQuery_3.3.1.js"></script>
+     <script src="scripts/new_navbar.js"></script>
+     <!-- <script src="scripts/navbar.js"></script> -->
 
    </body>
 </html>
