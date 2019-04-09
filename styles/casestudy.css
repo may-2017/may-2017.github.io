@@ -296,6 +296,7 @@ b {
 .project-raven {
   display: block;
   position: relative;
+  z-index: -100;
 }
 
 .project-raven:before {
