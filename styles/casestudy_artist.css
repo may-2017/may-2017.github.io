@@ -304,6 +304,11 @@ b {
   z-index: -100;
 }
 
+#rev-1 {
+  opacity: 0;
+}
+
+
 .project-raven:before {
   background: #5c3d81;
   content: "";

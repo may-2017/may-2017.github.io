@@ -251,6 +251,10 @@ b {
   padding-top: 4rem;
 }
 
+#rev-1 {
+  opacity: 0;
+}
+
 .image {
   height: auto;
   max-width: 100%;
