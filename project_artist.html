@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/casestudy_artist.css">
     <link rel="stylesheet" href="styles/revealer.css">
+    <!-- Lightbox -->
+    <link href="styles/tobi.css" rel="stylesheet">
+
 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -273,13 +276,19 @@
 
     <div class="wrapper-userflow">
       <div class="userflow">
-        <img src="images/browse_artwork.png" alt="Browsing Artwork" class="image-userflow">
+        <a href="images/browse_artwork.png" class="lightbox">
+          <img src="images/browse_artwork.png" alt="Browsing Artwork" class="image-userflow">
+        </a>
       </div>
       <div class="userflow">
-        <img src="images/about.png" alt="About the Artist" class="image-userflow">
+        <a href="images/about.png" class="lightbox">
+          <img src="images/about.png" alt="About the Artist" class="image-userflow">
+        </a>
       </div>
       <div class="userflow">
-        <img src="images/contact_flow.png" alt="Contact the Artist" class="image-userflow">
+        <a href="images/contact_flow.png" class="lightbox">
+          <img src="images/contact_flow.png" alt="Contact the Artist" class="image-userflow">
+        </a>
       </div>
     </div>
 
@@ -323,40 +332,6 @@
 
     <div class="container">
       <section class="usertestingVisual">
-        <!-- <h3>User Testing, First Round</h3>
-        <p>
-          I conducted three usability tests of my low-fidelity mockups. My goal was to direct the testers to provide feedback about the overall user experience and how easy or difficult it is to the following tasks:
-        </p>
-        <ul class="bullet-point">
-          <li class="emphasize">
-            Signing up for an account.
-          </li>
-          <li class="emphasize">
-            Adding a piece of content.
-          </li>
-          <li class="emphasize">
-            Organizing a piece of content.
-          </li>
-        </ul>
-        <p>
-          Based on the feedback, I identified several items could be improved and some other items were approved by users.
-        </p>
-        <ul class="bullet-point">
-          <li class="li-text">
-            Limited text using is approved by users. The homepage is concise and clean, but need some enrichment, like more features, videos, and user testimonials.
-          </li>
-          <li class="li-text">
-            Sign up process is smooth. No popping up window is more convenience and eye-catching, while sign in button would better be enlarged.
-          </li>
-          <li class="li-text">
-            Keeping the design less distractive in order to help users complete their work efficiently.
-          </li>
-          <li class="li-text">
-            Users showed the proper images they thought for the homepage. All images provide a professional working feeling, like a laptop, a cup of coffee on a desk, a notebook and a pencil, etc.
-          </li>
-        </ul>
-        <img src="images/iphone_in_hand_smaller.jpg" alt="iPhone Testing" class="image"> -->
-
         <h3>Preference Testing</h3>
         <p>
           I conducted the preference tests on Usability Hub to see wether one design favored the other.
@@ -517,6 +492,10 @@
     <script src="scripts/block_reveal.js"></script>
     <script src="scripts/scrollMonitor.js"></script>
     <script src="scripts/revealer2.js"></script>
+    <!-- lightbox -->
+    <script src="scripts/tobi.min.js"></script>
+    <script src="scripts/lightbox.js"></script>
+
 
 
    </body>

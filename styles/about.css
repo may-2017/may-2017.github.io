@@ -114,7 +114,7 @@ body {
   right: 0;
   top: 0;
   position: absolute;
-  background-color: rgba(38, 84, 133, 0.54);
+  background-color: rgba(92, 61, 129, 0.54);
   border-radius: 50%;
   z-index: 18;
   overflow: hidden;
@@ -172,7 +172,7 @@ body {
   right: -160px;
   top: -160px;
   border-radius: 50%;
-  background-color: rgba(38, 84, 133, 0.54);
+  background-color: rgba(92, 61, 129, 0.54);
 }
 
 .oppenned span:nth-child(3) { transform: rotate(-45deg) translateY(-10px) translateX(10px); }
