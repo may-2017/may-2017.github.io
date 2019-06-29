@@ -249,6 +249,7 @@ b {
 .projecText {
   font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, sans-serif;
   padding-top: 4rem;
+  padding-bottom: 5rem;
 }
 
 .image {
@@ -735,6 +736,7 @@ footer {
    .projecText {
      float: left;
      padding-top: 3rem;
+     padding-bottom: 0;
      text-align: left;
      width: 30%;
    }
