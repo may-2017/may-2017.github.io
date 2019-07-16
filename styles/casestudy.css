@@ -534,6 +534,40 @@ padding-bottom: 0;
   padding-top: 1rem;
 }
 
+#next-project {
+  background: linear-gradient(rgba(25, 25, 25, 0.8),rgba(25, 25, 25, 0.8)),url(../images/next_project_artist.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 17rem;
+  height: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.next-project-text {
+  color: #dadada;
+  font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, sans-serif;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.next-project-type {
+  font-weight: 400;
+}
+
+#next-project-name {
+  color: #dadada;
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+}
+
+#arrow_next_svg {
+  display: none;
+}
+
 .contact {
   margin: 5.2rem auto;
   width: 20rem;
@@ -554,7 +588,7 @@ padding-bottom: 0;
 
 footer {
   font-size: 10px;
-  padding-top: 10rem;
+  /* padding-top: 10rem; */
   padding-bottom: 2rem;
   text-align: center;
 }
@@ -877,6 +911,49 @@ footer {
    .wrapper-testing-content {
      width: 65%;
    }
+   .next-project-wrapper {
+     margin: 0 auto;
+     max-width: 80%;
+     width: 100%;
+   }
+
+   .next-project-des {
+     font-size: 1.2rem;
+     font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, sans-serif;
+   }
+
+   #next-project-name {
+     text-align: left;
+   }
+
+   .next-project-text {
+     display: block;
+     float: left;
+     margin-top: 3rem;
+     margin-left: 5rem;
+     padding: 0;
+     text-align: left;
+     width: 50%;
+   }
+
+   #arrow_next_svg {
+     display: block;
+     float: right;
+     margin-top: 6.5rem;
+     width: 30%;
+   }
+
+   #next-project:hover {
+      background: linear-gradient(rgba(10, 10, 10, 0.9),rgba(10, 10, 10, 0.9)),url(../images/next_project_artist.png);
+      transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+   }
+
+   #next-project:hover #arrow_next_svg {
+     transform: translateX(30px);
+     transition: all 1s ease;
+     -webkit-transition: all 1s ease;
+   }
 
  }
 
@@ -912,6 +989,10 @@ footer {
 
    .large-image, .color-typeface, .wrapper-testing {
      max-width: 1300px;
+   }
+
+   .next-project-wrapper {
+     max-width: 1530px;
    }
 
  }
