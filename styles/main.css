@@ -440,7 +440,7 @@ a svg:hover #github {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(3,8rem)
+  grid-template-rows: repeat(4,8rem)
 }
 
 .grid-image {
@@ -719,7 +719,7 @@ footer {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,10rem)
+    grid-template-rows: repeat(3,10rem)
   }
 
   .text-overlay {
@@ -815,7 +815,7 @@ footer {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(2,14rem)
+    grid-template-rows: repeat(3,14rem)
   }
 
   h4 {
@@ -858,7 +858,7 @@ footer {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(7,1fr);
-    grid-template-rows: repeat(1,14rem)
+    grid-template-rows: repeat(2,14rem)
   }
 
   h4 {
