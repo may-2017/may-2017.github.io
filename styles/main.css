@@ -317,8 +317,8 @@ mark.name {
   width: 90%;
 }
 
-#project {
-  padding-bottom: 2rem;
+.project {
+  padding-bottom: 3rem;
 }
 
 .type {
@@ -667,7 +667,7 @@ footer {
     100% { opacity: 0; },
   }
 
-  #project {
+  .project {
     padding-top: 10rem;
     padding-bottom: 5rem;
   }
@@ -806,7 +806,7 @@ footer {
     padding-left: 0;
   }
 
-  #project {
+  .project {
     padding-top: 12rem;
     padding-bottom: 8rem;
   }
