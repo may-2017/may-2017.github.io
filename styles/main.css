@@ -334,7 +334,11 @@ h3 {
   padding-bottom: 1rem;
 }
 
-h3:hover {
+/* h3:hover {
+  color: #6fd6f1;
+} */
+
+#cloud_storage:hover {
   color: #6fd6f1;
 }
 
