@@ -249,6 +249,8 @@ b {
 .projecText {
   font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, sans-serif;
   padding-top: 4rem;
+  padding-bottom: 5rem;
+
 }
 
 #rev-1 {
@@ -535,7 +537,7 @@ padding-bottom: 0;
 }
 
 #next-project {
-  background: linear-gradient(rgba(25, 25, 25, 0.8),rgba(25, 25, 25, 0.8)),url(../images/next_project_artist.png);
+  background: linear-gradient(rgba(25, 25, 25, 0.8),rgba(25, 25, 25, 0.8)),url(../images/next_project_cinemark.png);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 17rem;
@@ -944,7 +946,7 @@ footer {
    }
 
    #next-project:hover {
-      background: linear-gradient(rgba(10, 10, 10, 0.9),rgba(10, 10, 10, 0.9)),url(../images/next_project_artist.png);
+      background: linear-gradient(rgba(10, 10, 10, 0.9),rgba(10, 10, 10, 0.9)),url(../images/next_project_cinemark.png);
       transition: all 1s ease;
       -webkit-transition: all 1s ease;
    }
