@@ -9,7 +9,7 @@
 
     var rev1 = new RevealFx(document.querySelector('#rev-1'), {
       revealSettings : {
-        bgcolor: '#4744d2',
+        bgcolor: '#6fd6f1',
         onCover: function(contentEl, revealerEl) {
           contentEl.style.opacity = 1;
         }

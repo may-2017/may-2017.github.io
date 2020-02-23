@@ -181,7 +181,7 @@ body {
 
 
 #current-page {
-  color: #6fd6f1;
+  color: #4744d2;
 }
 
 a {
@@ -210,7 +210,7 @@ h1 {
 
 mark.name {
   background: none;
-  color: #6fd6f1;
+  color: #4744d2;
   font-weight: bold;
 }
 
@@ -473,7 +473,7 @@ a svg:hover #mail,
 a svg:hover #instagram,
 a svg:hover #linkedin,
 a svg:hover #github {
-  fill: #6fd6f1;
+  fill: #4744d2;
 }
 
 .grid-image {
@@ -608,7 +608,7 @@ footer {
 
   .logo:hover,
   .nav-links:hover {
-    color: #6fd6f1;
+    color: #4744d2;
   }
 
   #rev-1, #rev-2 {
