@@ -354,6 +354,20 @@ hr {
   width: 7rem;
 }
 
+.solid_before_after {
+  width: 65%;
+  height: 0.3rem;
+  margin: 0rem auto 1rem;
+}
+
+.p_before_after {
+  text-align: center;
+  color: #878696;
+  font-weight: 500;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+}
+
 .specifies-content {
   line-height: 3rem;
   padding-top: 2rem;
