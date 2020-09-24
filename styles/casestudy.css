@@ -535,7 +535,7 @@ padding-bottom: 0;
 }
 
 #next-project {
-  background: linear-gradient(rgba(25, 25, 25, 0.8),rgba(25, 25, 25, 0.8)),url(../images/next_project_artist.png);
+  background: linear-gradient(rgba(25, 25, 25, 0.8),rgba(25, 25, 25, 0.8)),url(../images/next_project_new_term.png);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 17rem;
@@ -944,7 +944,7 @@ footer {
    }
 
    #next-project:hover {
-      background: linear-gradient(rgba(10, 10, 10, 0.9),rgba(10, 10, 10, 0.9)),url(../images/next_project_artist.png);
+      background: linear-gradient(rgba(10, 10, 10, 0.9),rgba(10, 10, 10, 0.9)),url(../images/next_project_new_term.png);
       transition: all 1s ease;
       -webkit-transition: all 1s ease;
    }
