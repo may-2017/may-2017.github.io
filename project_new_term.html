@@ -117,9 +117,11 @@
       <!-- Summary -->
       <section class="projectSummary">
         <h3>Project Summary</h3>
-        <p>Praxi Data is a big data startup that has an automated data catalog pre-trained by experts. It accelerates workflow for AI model training and builds better curriculums faster.
+        <p>Praxi data provides pre-trained data catalog and libraries, and data steward is one of our primary users. A data steward’s responsibilities include: manage data assets across the enterprise, ensure high levels of data quality, accuracy, security, & privacy,  and Manages business definitions of data elements.
         </p>
-        <p>When the user needs to add a new term to the catalog, he will start a new term creation process, where the term name, description, synonym, effective and retire date, and some other conditions will be defined. We used to employ  the inspector panel solution for creating new terms. However this solution is no longer sufficient for future new term creation experience. So I redesigned the experience, the inspector panel was replaced with the <b>wizard experience</b>, in order to increase the capacity and convey our aesthetic and <b>minimalist</b> design.
+        <p><b>Adding new terms</b> to the catalog is one of her main tasks and an important step in managing the data. She needs to define the terms by filling out fields through multiple steps, include the term name, status, description, effective and retire date, etcetera.
+        </p>
+        <p>We used to employ  the inspector panel solution for creating new terms. However this solution is no longer sufficient for future new term creation experience. So I redesigned the experience, the inspector panel was replaced with the <b>wizard experience</b>, in order to increase the capacity and convey our aesthetic and <b>minimalist</b> design.
         </p>
       </section>
     </div>
@@ -161,8 +163,10 @@
     <div class="container">
       <section class="problemSolution">
         <h3>Problem</h3>
-        <p>The inspector panel solution was no longer sufficient for future new term creation experience. The inspector panel had <b>limited space</b> for rich content. Some new terms require more than three steps to complete. Meanwhile, there were too many components in the small area, such as steppers, data vis, inputs, and etc., which <b>overwhelmed</b> the user. The design team needs to find a new way to create new terms.
-         </p>
+        <p>Here is the existing approach. The entire new term creation process happened in the inspector panel, where has too many components in the small area, such as steppers, data vis, and inputs. All those together <b>overwhelmed the user</b>, also are not in line with our design system.</p>
+        <p>This method doesn’t provide the user to <b>focus on key elements</b> either, since it’s only an inspector panel, the larger space of the screen is taken by the data table.</p>
+        <p>And besides those, the main problem is some of the new terms <b>will require more than three steps</b> to complete. The inspector panel doesn’t have enough space for that. The design team needs to find a new way to create new terms.</p>
+
        </section>
      </div>
 
@@ -212,7 +216,8 @@
         <!-- <h3>User Research</h3> -->
         <p>In order to find problems and make the improvement, I used the <b>Heuristic evaluation</b> method to examine the interface and judge its compliance with recognized usability principles (the "heuristics"). I made a checklist and scaled each principle from zero to five. The higher the score, the more in line with the design specifications.</p>
 
-        <p>The current inspector panel design got lower scores on many heuristics. Below are the score and the comments of some principles. </p>
+        <p>The current inspector panel design got lower scores on many heuristics. Below are some examples. You can tell they are all under three.</p>
+        <p>For instance,  On data entry screens, tasks described in terminology familiar to users, but still need helper text for non-expert users. So we need a larger space to display the helper text for the new approach.</p>
       </section>
     </div>
 
@@ -380,8 +385,8 @@
       <section class="usertestingVisual">
         <!-- <h3>Insights Panel</h3> -->
         <p>
-          The form has six steps including the summary. Users need to fill in the information in each step to complete the new term creation. I reorganized some of the forms to make the content more logical and in line with user habits. Two steps were added due to the backend needs, which gave me a design challenge. I will talk about it later. The infographic below shows the multistep form information architecture.
-        </p>
+        I talked to the data steward and our backend architect, in order to gain more insights and domain knowledge. So I learned that Creating new terms and complex terms are important tasks for a data steward. This process needs to stand out. The process is <b>more complicated</b> and contains <b>different amounts of fields</b> based on different terms.</p>
+        <p>The data steward needs to fill in the information in each step to complete the creation. I synthesized the information and conducted the <b>information architecture</b>. The entire process has six steps (Business, Operational, Matching, Define, Locate, and Summary), and each contains different questions. I reorganized some of the forms to make the content more logical and in line with user habits. Two steps, define and location, were added due to some new terms’ needs.</p>
         <!-- <ul class="bullet-point">
           <li class="emphasize">
             Signing up for an account.
@@ -488,23 +493,26 @@
         <section>
           <h3>Challenge</h3>
           <p>
-            Due to the backend technology, more content needed to be added to the form. When a new term is added, a series of questions will be asked after the matching step, and their formats are <b>checkboxes, select elements, or input answers</b>. The challenge for the design team is how to arrange the new content to guide the user to smoothly complete the new term process without being misled or overwhelmed.
+            One of the new steps is to define the term, which contains a series of questions. So the challenge for the design team is to arrange the new content to <b>guide the user to smoothly complete the new term process without being misled or overwhelmed</b>.
           </p>
           <p>
-            I split the content into two steps, one was “Define” and the other was “Locate”. In the “Define” step, questions were designed in different forms. To enable users to make appropriate operations, I divided the questions into three parts by the form logic.
+            I asked our data architect, can we sort the questions according to their answer logic in the graph QL. The answer is yes. So to enable users to make appropriate operations, we divided the questions into three parts by the <b>form logic:</b>
           </p>
           <ul class="bullet-point">
             <li class="li-text">
-              Ture or False Conditions: Users just need to check the box to define if the condition is true for this term, such as the GDPR compliant and the PII data.
-
+              <b>Ture or False Conditions(checkboxes)</b>
             </li>
             <li class="li-text">
-              Selectable Conditions: This part consists of selected elements. Users select the applicable condition from the dropdown options. For example, the user needs to select the frequency of the term that is updated, which is weekly, monthly, semi-annual, annual, on-demand, rarely, or never.
+              <b>Selectable Conditions(dropdown elements)</b>
             </li>
             <li class="li-text">
-              Input Conditions: Users can type in their own conditions based on the requests.
+              <b>Input Conditions(input box)</b>
             </li>
           </ul>
+          <p>
+            For some of the questions, users just need to answer yes or no, for example, "Is this term under GDPR?" So it will be a Ture or False Condition, a checkbox, question.
+            <p>For some other questions, users need to select the applicable condition. For example, the user needs to select the frequency of the term that is updated, which is weekly, monthly, annual, on-demand, or never, that would be a perfect dropdown question.</p>
+            <p>The rest questions need the user to input his answer, so we use the input box.</p>
       </section>
     </div>
 
