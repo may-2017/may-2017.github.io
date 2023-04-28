@@ -278,7 +278,7 @@ mark.name {
 }
 
 .project-movie:hover:before {
-  background: #971a1a;
+  background: #0F79B0;
 }
 
 .project-new_term:before {
@@ -395,7 +395,7 @@ h3 {
 }
 
 #cinemark:hover {
-  color: #bc3030;
+  color: #038AD0;
 }
 
 #artist_web:hover {
@@ -426,9 +426,9 @@ h3 {
 }
 
 .cta-red {
-  border: solid 2px #bc3030;
-  box-shadow: 0 5px 8px rgba(221, 132, 132, 0.4);
-  color: #bc3030;
+  border: solid 2px #038AD0;
+  box-shadow: 0 5px 8px rgba(114, 184, 220, 0.4);
+  color: #038AD0;
 }
 
 .cta-purple {
@@ -450,8 +450,8 @@ h3 {
 }
 
 .cta-red:hover {
-  border: solid 2px #bc3030;
-  background: #bc3030;
+  border: solid 2px #038AD0;
+  background: #038AD0;
   color: #fff;
 }
 
